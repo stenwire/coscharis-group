@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Insights | Coscharis Group</title>
+    <meta name="description" content="Stay updated with the latest news, press releases, and insights from across the Coscharis Group of companies.">
+    
+    <!-- SEO & Social Media -->
+    <meta property="og:title" content="News & Insights | Coscharis Group">
+    <meta property="og:description" content="The latest news and developments from Coscharis Group.">
+    <meta property="og:image" content="assets/images/social-share-image.jpg">
+    <meta property="og:url" content="https://www.coscharisgroup.net/news">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" sizes="any">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="/" class="logo" aria-label="Coscharis Group Home">
+                 <svg width="180" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="0" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#0B2B5A">COSCHARIS</text>
+                    <rect x="135" y="8" width="8" height="24" fill="#D81E3C"/>
+                    <rect x="145" y="8" width="8" height="24" fill="#0B2B5A"/>
+                </svg>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav-list">
+                    <span class="sr-only">Menu</span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul id="main-nav-list">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="companies.html">Our Companies</a></li>
+                    <li><a href="leadership.html">Leadership</a></li>
+                    <li><a href="news.html" aria-current="page">News & Insights</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html" class="btn btn-secondary-outline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- 1. Subpage Hero Section -->
+        <section class="hero-subpage">
+            <div class="container">
+                <h1>News & Insights</h1>
+                <p class="subpage-intro">The latest announcements, stories, and perspectives from the heart of Coscharis Group and our diverse businesses.</p>
+            </div>
+        </section>
+
+        <!-- 2. News Listings Section -->
+        <section class="section-padding">
+            <div class="container">
+                
+                <!-- News Filter Controls -->
+                <div id="news-filters" class="job-filters"> <!-- Reusing .job-filters style -->
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="corporate">Corporate</button>
+                    <button class="filter-btn" data-filter="motors">Motors</button>
+                    <button class="filter-btn" data-filter="farms">Farms</button>
+                    <button class="filter-btn" data-filter="technology">Technology</button>
+                </div>
+
+                <!-- News Grid -->
+                <div id="news-grid" class="news-grid">
+                    
+                    <!-- Featured Article -->
+                    <article class="news-card featured-article" data-category="corporate">
+                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2070&auto=format&fit=crop" alt="Team members collaborating in a modern office." class="news-card-image">
+                        <div class="news-card-content">
+                            <span class="news-card-category">Corporate</span>
+                            <h3 class="news-card-title">Coscharis Group Recognized for Corporate Governance Excellence in 2024</h3>
+                            <p class="news-card-excerpt">An overview of the prestigious award and what it means for our commitment to transparency and stakeholder value.</p>
+                            <a href="#" class="card-link">Read Full Story</a>
+                        </div>
+                    </article>
+
+                    <!-- Regular Articles (using the component from the homepage) -->
+                     <article class="news-card" data-category="motors">
+                         <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=1964&auto=format&fit=crop" alt="A new luxury car in a showroom." class="news-card-image">
+                         <div class="news-card-content">
+                             <span class="news-card-category">Motors</span>
+                             <h3 class="news-card-title">The All-New Range Rover Arrives at Coscharis Motors Showrooms</h3>
+                             <a href="#" class="card-link">Read More</a>
+                         </div>
+                     </article>
+
+                     <article class="news-card" data-category="farms">
+                         <img src="https://images.unsplash.com/photo-1518186213361-b18a38527345?q=80&w=2070&auto=format&fit=crop" alt="A vast, green rice paddy field under a clear sky." class="news-card-image">
+                         <div class="news-card-content">
+                             <span class="news-card-category">Farms</span>
+                             <h3 class="news-card-title">Coscharis Farms Announces Record Rice Harvest, Boosting Local Supply</h3>
+                             <a href="#" class="card-link">Read More</a>
+                         </div>
+                     </article>
+
+                    <article class="news-card" data-category="technology">
+                         <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop" alt="A technology team working on computer systems." class="news-card-image">
+                         <div class="news-card-content">
+                             <span class="news-card-category">Technology</span>
+                             <h3 class="news-card-title">Coscharis Tech Partners with Global Leader to Enhance Cybersecurity Solutions</h3>
+                             <a href="#" class="card-link">Read More</a>
+                         </div>
+                     </article>
+
+                     <article class="news-card" data-category="corporate">
+                         <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1932&auto=format&fit=crop" alt="Business professionals shaking hands." class="news-card-image">
+                         <div class="news-card-content">
+                             <span class="news-card-category">Corporate</span>
+                             <h3 class="news-card-title">Our Commitment to Community: The Coscharis Foundation Annual Report</h3>
+                             <a href="#" class="card-link">Read More</a>
+                         </div>
+                     </article>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer-main">
+        <!-- Footer content remains the same -->
+        <div class="container">...</div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

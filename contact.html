@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Coscharis Group</title>
+    <meta name="description" content="Get in touch with Coscharis Group. Find contact details for our corporate office and subsidiaries, or send us a message through our contact form.">
+    
+    <!-- SEO & Social Media -->
+    <meta property="og:title" content="Contact Us | Coscharis Group">
+    <meta property="og:description" content="Find contact details for our corporate office and subsidiaries.">
+    <meta property="og:image" content="assets/images/social-share-image.jpg">
+    <meta property="og:url" content="https://www.coscharisgroup.net/contact">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" sizes="any">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="/" class="logo" aria-label="Coscharis Group Home">
+                 <svg width="180" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="0" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#0B2B5A">COSCHARIS</text>
+                    <rect x="135" y="8" width="8" height="24" fill="#D81E3C"/>
+                    <rect x="145" y="8" width="8" height="24" fill="#0B2B5A"/>
+                </svg>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav-list">
+                    <span class="sr-only">Menu</span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul id="main-nav-list">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="companies.html">Our Companies</a></li>
+                    <li><a href="leadership.html">Leadership</a></li>
+                    <li><a href="news.html">News & Insights</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html" class="btn btn-secondary-outline" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- 1. Subpage Hero Section -->
+        <section class="hero-subpage">
+            <div class="container">
+                <h1>Get in Touch</h1>
+                <p class="subpage-intro">We are here to help. Whether you have a question about a product, a partnership inquiry, or need corporate information, find the right contact below.</p>
+            </div>
+        </section>
+
+        <!-- 2. Contact Section -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Left Column: Details & Map -->
+                    <div class="contact-details">
+                        <h2>Contact Information</h2>
+                        <p>Please select a subsidiary to view specific contact information. For general inquiries, please use the form.</p>
+                        
+                        <div class="form-group">
+                            <label for="subsidiary-selector">Select a Subsidiary:</label>
+                            <select id="subsidiary-selector" class="form-control">
+                                <option value="corporate" selected>Corporate Headquarters</option>
+                                <option value="motors">Coscharis Motors</option>
+                                <option value="tech">Coscharis Technologies</option>
+                                <option value="mobility">Coscharis Mobility</option>
+                                <option value="farms">Coscharis Farms</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Dynamic Info Blocks -->
+                        <div id="info-corporate" class="subsidiary-info active">
+                            <h3>Corporate Headquarters</h3>
+                            <p>Coscharis Plaza, 107/109 Adeola Odeku Street, Lekki Phase 1, Lagos, Nigeria.</p>
+                            <p><strong>Phone:</strong> +234 1 271 7777</p>
+                            <p><strong>Email:</strong> info@coscharisgroup.net</p>
+                        </div>
+                        <div id="info-motors" class="subsidiary-info">
+                            <h3>Coscharis Motors</h3>
+                            <p>Visit a showroom near you or contact our central sales team.</p>
+                            <p><strong>Phone:</strong> +234 808 856 8888</p>
+                            <p><strong>Email:</strong> sales.motors@coscharisgroup.net</p>
+                        </div>
+                        <div id="info-tech" class="subsidiary-info">
+                            <h3>Coscharis Technologies</h3>
+                            <p>Contact our team for ICT solutions and partnership opportunities.</p>
+                            <p><strong>Phone:</strong> +234 1 270 5333</p>
+                            <p><strong>Email:</strong> info.tech@coscharisgroup.net</p>
+                        </div>
+                        <div id="info-mobility" class="subsidiary-info">
+                            <h3>Coscharis Mobility</h3>
+                            <p>For rentals, leasing, and fleet management services.</p>
+                            <p><strong>Phone:</strong> +234 809 070 1000</p>
+                            <p><strong>Email:</strong> info@coscharismobility.com</p>
+                        </div>
+                        <div id="info-farms" class="subsidiary-info">
+                            <h3>Coscharis Farms</h3>
+                            <p>For inquiries about our agricultural products and distribution.</p>
+                            <p><strong>Phone:</strong> +234 812 345 6789 (Placeholder)</p>
+                            <p><strong>Email:</strong> info.farms@coscharisgroup.net</p>
+                        </div>
+
+                        <div class="map-embed">
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.629399813083!2d3.447936814770305!3d6.44078899533723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b5e282d3e91%3A0x692694383921b764!2sCoscharis%20Plaza!5e0!3m2!1sen!2sng!4v1671234567890!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map to Coscharis Group HQ"></iframe>
+                        </div>
+
+                    </div>
+                    
+                    <!-- Right Column: Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <h2>Send us a Message</h2>
+                        <form id="contact-form" class="contact-form" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="6" class="form-control" required></textarea>
+                            </div>
+                            <!-- Honeypot field for spam prevention -->
+                            <div class="honeypot">
+                                <label for="website">Website</label>
+                                <input type="text" id="website" name="website">
+                            </div>
+                            <div id="form-message" class="form-status-message"></div>
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer-main">
+        <!-- Footer content remains the same -->
+        <div class="container">...</div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
