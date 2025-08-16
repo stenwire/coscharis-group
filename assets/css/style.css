@@ -818,6 +818,78 @@ ul { list-style: none; }
     display: none;
 }
 
+/* 8.5. Motors Page Styles */
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-logo-item {
+    background-color: var(--color-light);
+    padding: 1.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    height: 120px; /* Consistent height */
+}
+
+.brand-logo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lift);
+}
+
+.brand-logo-item img {
+    max-width: 100%;
+    max-height: 60px; /* Control logo size */
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: filter var(--transition-fast), opacity var(--transition-fast);
+}
+
+.brand-logo-item:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.option-card {
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-soft);
+    padding: 2rem;
+    text-align: center;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+.option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lift);
+}
+
+.option-card-icon {
+    margin-bottom: 1.5rem;
+    color: var(--color-accent-red);
+}
+
+.option-card .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.option-card p {
+    margin-bottom: 1.5rem;
+}
+
+.option-card .btn {
+    width: 100%;
+}
+
+
 /* 9. Accessibility & Animations */
 :focus-visible {
     outline: 3px solid var(--color-royal-blue);
@@ -874,6 +946,18 @@ ul { list-style: none; }
     /* ... (existing styles) ... */
     .companies-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .brands-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .brands-grid {
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
