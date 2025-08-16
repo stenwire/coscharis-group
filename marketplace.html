@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace | Coscharis Group</title>
+    <meta name="description" content="Explore and shop for a wide range of products from the Coscharis Group, including premium vehicles, technology solutions, agricultural products, and more.">
+    <meta name="keywords" content="Coscharis marketplace, buy cars, shop technology, farm products, beverages, auto parts">
+
+    <!-- SEO & Social Media -->
+    <meta property="og:title" content="Marketplace | Coscharis Group">
+    <meta property="og:description" content="Your one-stop shop for quality products from across the Coscharis ecosystem.">
+    <meta property="og:image" content="assets/images/social-share-image.jpg">
+    <meta property="og:url" content="https://www.coscharisgroup.net/marketplace">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" sizes="any">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="/" class="logo" aria-label="Coscharis Group Home">
+                 <svg width="180" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="0" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#0B2B5A">COSCHARIS</text>
+                    <rect x="135" y="8" width="8" height="24" fill="#D81E3C"/>
+                    <rect x="145" y="8" width="8" height="24" fill="#0B2B5A"/>
+                </svg>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav-list">
+                    <span class="sr-only">Menu</span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul id="main-nav-list">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="companies.html">Our Companies</a></li>
+                    <li><a href="leadership.html">Leadership</a></li>
+                    <li><a href="news.html">News & Insights</a></li>
+                    <li><a href="marketplace.html" aria-current="page">Marketplace</a></li>
+                    <!-- <li><a href="careers.html">Careers</a></li> -->
+                    <li><a href="contact.html" class="btn btn-secondary-outline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- 1. Subpage Hero Section -->
+        <section class="hero-subpage">
+            <div class="container">
+                <h1>Marketplace</h1>
+                <p class="subpage-intro">Discover a world of quality and value. Your one-stop shop for everything Coscharis.</p>
+            </div>
+        </section>
+
+        <!-- 2. Marketplace Section -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="marketplace-layout">
+                    
+                    <!-- Filter Sidebar -->
+                    <aside class="filter-sidebar">
+                        <h3>Categories</h3>
+                        <ul class="filter-categories">
+                            <li><button class="filter-option active" data-filter="all">All Products</button></li>
+                            <li class="has-children">
+                                <div class="category-toggle">
+                                    <button class="filter-option" data-filter="motors">Motors</button>
+                                    <button class="toggle-icon" aria-label="Toggle Motors category"></button>
+                                </div>
+                                <ul class="filter-sub-categories">
+                                    <li><button class="filter-option" data-filter="bmw">BMW</button></li>
+                                    <li><button class="filter-option" data-filter="jaguar">Jaguar</button></li>
+                                    <li><button class="filter-option" data-filter="land-rover">Land Rover</button></li>
+                                </ul>
+                            </li>
+                            <li><button class="filter-option" data-filter="technology">Technologies</button></li>
+                            <li><button class="filter-option" data-filter="farms">Farms</button></li>
+                            <li><button class="filter-option" data-filter="beverages">Beverages</button></li>
+                            <li><button class="filter-option" data-filter="parts">Motor Parts</button></li>
+                        </ul>
+                    </aside>
+
+                    <!-- Product Grid -->
+                    <div class="product-grid">
+                        
+                        <div class="product-card" data-category="motors bmw">
+                            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=800" alt="Product Image">
+                            <div class="product-card-content">
+                                <h4 class="product-name">BMW X5</h4>
+                                <p class="product-category">Motors</p>
+                                <p class="product-price">₦ 45,000,000</p>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="technology">
+                            <img src="https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?q=80&w=800" alt="Product Image">
+                            <div class="product-card-content">
+                                <h4 class="product-name">Enterprise Server</h4>
+                                <p class="product-category">Technologies</p>
+                                <p class="product-price">Call for price</p>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="farms">
+                            <img src="https://coscharisgroup.net/wp-content/themes/coscharis1/images/rice.jpg" alt="Product Image">
+                            <div class="product-card-content">
+                                <h4 class="product-name">Coscharis Premium Rice (50kg)</h4>
+                                <p class="product-category">Farms</p>
+                                <p class="product-price">₦ 35,000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card" data-category="motors land-rover">
+                            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=800" alt="Product Image">
+                            <div class="product-card-content">
+                                <h4 class="product-name">Range Rover Velar</h4>
+                                <p class="product-category">Motors</p>
+                                <p class="product-price">₦ 52,000,000</p>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="parts">
+                            <img src="https://s3-ap-southeast-2.amazonaws.com/mytyresite-images/news/P0rqvBNxgn_engine_oil_change.webp" alt="Product Image">
+                            <div class="product-card-content">
+                                <h4 class="product-name">Ford Engine Oil</h4>
+                                <p class="product-category">Motor Parts</p>
+                                <p class="product-price">₦ 15,000</p>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="beverages">
+                            <img src="https://coscharisgroup.net/wp-content/themes/coscharis1/images/Yoghurt-1.jpg" alt="Product Image">
+                            <div class="product-card-content">
+                                <h4 class="product-name">Yoghurt</h4>
+                                <p class="product-category">Beverages</p>
+                                <p class="product-price">₦ 5,000</p>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="motors jaguar">
+                            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=800" alt="Product Image">
+                            <div class="product-card-content">
+                                <h4 class="product-name">Jaguar F-Pace</h4>
+                                <p class="product-category">Motors</p>
+                                <p class="product-price">₦ 48,000,000</p>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="technology">
+                            <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?q=80&w=800" alt="Product Image">
+                            <div class="product-card-content">
+                                <h4 class="product-name">High-Performance Laptop</h4>
+                                <p class="product-category">Technologies</p>
+                                <p class="product-price">₦ 850,000</p>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="farms">
+                            <img src="https://www.leaflimb.com/assets/posts/fertilizer_banner.jpg" alt="Product Image">
+                            <div class="product-card-content">
+                                <h4 class="product-name">Organic Fertilizer (25kg)</h4>
+                                <p class="product-category">Farms</p>
+                                <p class="product-price">₦ 12,000</p>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="parts">
+                            <img src="https://www.buybrakes.com/images/product/nrs-brake-pad-set-premium-galvanized-83152061.jpg" alt="Product Image">
+                            <div class="product-card-content">
+                                <h4 class="product-name">Brake Pad Set</h4>
+                                <p class="product-category">Motor Parts</p>
+                                <p class="product-price">₦ 25,000</p>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="motors bmw">
+                            <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=800" alt="Product Image">
+                            <div class="product-card-content">
+                                <h4 class="product-name">BMW 3 Series</h4>
+                                <p class="product-category">Motors</p>
+                                <p class="product-price">₦ 32,000,000</p>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="beverages">
+                            <img src="https://coscharisgroup.net/wp-content/themes/coscharis1/images/water-0.75L.jpg" alt="Product Image">
+                            <div class="product-card-content">
+                                <h4 class="product-name">Sparkling Water (Pack)</h4>
+                                <p class="product-category">Beverages</p>
+                                <p class="product-price">₦ 3,500</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer-main">
+        <!-- Footer content remains the same -->
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-col-brand">
+                    <svg width="180" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <text x="0" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">COSCHARIS</text>
+                       <rect x="135" y="8" width="8" height="24" fill="#D81E3C"/>
+                       <rect x="145" y="8" width="8" height="24" fill="white"/>
+                    </svg>
+                    <p>Delivering value for money, since 1977.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Companies</h4>
+                    <ul>
+                        <li><a href="motors.html">Motors</a></li>
+                        <li><a href="#">Technologies</a></li>
+                        <li><a href="#">Mobility</a></li>
+                        <li><a href="farms.html">Farms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="marketplace.html">Marketplace</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Stay updated with the latest from the Group.</p>
+                    <form class="newsletter-form">
+                        <label for="email-signup" class="sr-only">Email Address</label>
+                        <input type="email" id="email-signup" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Coscharis Group. All Rights Reserved.</p>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

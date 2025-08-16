@@ -12,6 +12,62 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Marketplace Filtering Logic
+    const filterContainer = document.querySelector('.filter-sidebar');
+    if (filterContainer) {
+        // Accordion functionality for categories
+        const categoryToggles = filterContainer.querySelectorAll('.category-toggle .toggle-icon');
+        categoryToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const parentLi = this.closest('li.has-children');
+                parentLi.classList.toggle('is-open');
+            });
+        });
+
+        const filterOptions = filterContainer.querySelectorAll('.filter-option');
+        const productCards = document.querySelectorAll('.product-grid .product-card');
+
+        // Function to apply filter
+        const applyFilter = (filterValue) => {
+            filterOptions.forEach(btn => {
+                if (btn.getAttribute('data-filter') === filterValue) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+
+            productCards.forEach(card => {
+                const cardCategories = card.getAttribute('data-category').split(' ');
+                if (filterValue === 'all' || cardCategories.includes(filterValue)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        };
+
+        // Handle direct clicks on filters
+        filterOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                const filterValue = this.getAttribute('data-filter');
+                applyFilter(filterValue);
+            });
+        });
+
+        // Check for URL params on page load
+        const urlParams = new URLSearchParams(window.location.search);
+        const categoryParam = urlParams.get('category');
+
+        if (categoryParam) {
+            applyFilter(categoryParam);
+            const targetCategory = filterContainer.querySelector(`.filter-option[data-filter="${categoryParam}"]`);
+            if (targetCategory && targetCategory.closest('.has-children')) {
+                targetCategory.closest('.has-children').classList.add('is-open');
+            }
+        }
+    }
+
     // Dynamic Year in Footer
     const yearSpan = document.getElementById('year');
     if (yearSpan) {
